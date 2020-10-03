@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import MobileNav from './MobileNav';
 
 const Navbar = () => {
+    const [mobileView, setMobileView] = useState(false);
+
+    const viewToggle = () => {
+        setMobileView(!mobileView);
+    };
+
     return (
         <header>
             <nav className="main-nav">
@@ -15,7 +22,9 @@ const Navbar = () => {
                         <i className="fab fa-github"></i>
                     </a>
                 </div>
+                <i className="fas fa-bars nav-toggle" onClick={viewToggle}></i>
             </nav>
+            <MobileNav toggle={viewToggle} isMobileView={mobileView}/>
         </header>
     );
 };
