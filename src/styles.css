@@ -1,0 +1,204 @@
+:root {
+    --primary-color: #3D4449;
+    --secondary-color: #80888F;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Main Container */
+.main-container {
+    padding: 2.5rem 6rem;
+}
+
+/* Main Navbar */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 5px solid #03A9F4;
+}
+
+.main-nav__title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+
+.main-nav__links a {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.main-nav__links a:hover {
+    color: #03A9F4;
+}
+
+/* Landing Page - About Me */
+.landing-aboutme {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.landing-aboutme__info {
+    flex: 1;
+    margin-right: 5rem;
+}
+
+.info__name {
+    color: var(--primary-color);
+    font-size: 3.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.info__title {
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.info__description {
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.info__technologies-heading {
+    font-size: 1.85rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    line-height: 2.75rem;
+}
+
+.info__technologies {
+    list-style-position: inside;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.technology {
+    margin: 1.5rem 0;
+}
+
+.landing-aboutme__img {
+    background: url('./img/Shaheer.JPG') center center/cover;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    flex: .75;
+}
+
+/* Landing Page - Education */
+.education {
+    margin: 5rem 0;
+}
+
+.education__heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.education__school {
+    display: flex;
+    padding-right: 3rem;
+    margin: 3rem 0;
+}
+
+.school__img {
+    background: url('./img/Reynolds.jpg') center center/cover;
+    height: 22rem;
+    width: 22rem;
+    border-radius: .5rem;
+    margin-right: 1.5rem;
+}
+
+.school__info {
+    padding: 1rem;
+}
+
+.school__info__name {
+    color: var(--primary-color);
+    font-size: 1.85rem;
+    margin-bottom: 1rem;
+}
+
+.school__info__degree {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.schoool__info__progress {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.school__info__description {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.school__info__accomplishments {
+    color: var(--secondary-color);
+    list-style-position: inside;
+    font-size: 1.5rem;
+}
+
+.school__info__accomplishments li {
+    margin: 1rem 0;
+}
+
+/* Media Queries */
+@media(max-width: 760px) {
+    .main-container {
+        padding: 2.5rem 3rem;
+    }
+
+    .landing-aboutme {
+        flex-direction: column-reverse;
+    }
+
+    .landing-aboutme__img {
+        flex: auto;
+        height: 30rem;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .landing-aboutme__info {
+        margin: 0;
+    }
+
+    .education__school {
+        flex-direction: column;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+    .school__img {
+        margin: 1rem 0;
+    }
+
+    .school__info__degree {
+        line-height: 2.5rem;
+    }
+}
