@@ -159,7 +159,7 @@ a:link, a:visited {
 }
 
 .landing-aboutme__img {
-    background: url('./img/Shaheer.JPG') center center/cover;
+    background: url('./img/shaheer.JPG') center center/cover;
     border-radius: 1.5rem;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     flex: .75;
