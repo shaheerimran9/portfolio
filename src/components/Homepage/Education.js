@@ -1,11 +1,13 @@
 import React from 'react';
+import reynoldsImg from '../../img/Reynolds.jpg';
+import lambdaImg from '../../img/LambdaSchool.png'
 
 const Education = () => {
     return (
         <section className="education">
             <h2 className="education__heading">Education</h2>
             <div className="education__school">
-                <img src={require('../img/LambdaSchool.png')} className="school__img" />
+                <img src={reynoldsImg} className="school__img" />
                 <div className="school__info">
                     <h3 className="school__info__name">Lambda School</h3>
                     <h3 className="school__info__degree">Full Stack Web Development and Computer Science Bootcamp</h3>
@@ -16,11 +18,11 @@ const Education = () => {
                 </div>
             </div>
             <div className="education__school">
-                <img src={require('../img/Reynolds.jpg')} className="school__img" />
+                <img src={lambdaImg} className="school__img" />
                 <div className="school__info">
                     <h3 className="school__info__name">J. Sargeant Reynolds Community College</h3>
                     <h3 className="school__info__degree">Associate of Science: Business Administration</h3>
-                    <p className="schoool__info__progress">Graduated 3.1 GPA</p>
+                    <p className="schoool__info__progress">Graduated</p>
                     <p className="school__info__description">
                         A two-year preparing graduates to begin or advance their careers in the business world with a comprehensive understanding of management principles, business-oriented technology and interpersonal skills.
                     </p>

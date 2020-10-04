@@ -15,6 +15,10 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+a:link, a:visited {
+    text-decoration: none;
+}
+
 /* Main Container */
 .main-container {
     padding: 2.5rem 6rem;
@@ -163,6 +167,7 @@ html {
 }
 
 .education__heading {
+    color: var(--primary-color);
     font-size: 2rem;
     margin-bottom: 2rem;
 }
@@ -218,6 +223,82 @@ html {
 
 .school__info__accomplishments li {
     margin: 1rem 0;
+}
+
+/* Landing Page - Recent Projects */
+.landing-projects__heading {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.landing-projects__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-items: center;   
+    grid-gap: 1rem;
+}
+
+/* Project Cards */
+.card-container {
+    position: relative;
+    height: 45rem;
+    width: 30rem;
+    margin: 1rem;
+    transition: transform .3s ease;
+}
+
+.card-container:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform .3s ease;
+}
+
+.card {
+    height: 45rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    background: #03A9F4;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.card-image {
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image h2 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    z-index: 999;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+    filter: brightness(0.55);
+}
+
+.card-text {
+    color: white;
+    padding: 2rem;
+}
+
+.card-text p {
+    font-weight: 300;
+    line-height: 2.75rem;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 /* Media Queries */

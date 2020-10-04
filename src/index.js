@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles.css'
-import Container from './components/Container'
-import Navbar from './components/Navbar';
-import Personal from './components/Personal';
-import Education from './components/Education'
+import Container from './components/Homepage/Container'
+import Navbar from './components/Homepage/Navbar';
+import Personal from './components/Homepage/Personal';
+import Education from './components/Homepage/Education';
+import Projects from './components/Homepage/Projects';
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             <Navbar />
             <Personal />
             <Education />
+            <Projects />
         </Container>
     )
 };
