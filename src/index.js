@@ -1,20 +1,25 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ReactDOM from 'react-dom';
+import Container from './components/Container'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './components/Home/Home';
+import ProjectsPage from './components/Projects/ProjectsPage';
+import AboutPage from './components/About/AboutPage';
 import './styles.css'
-import Container from './components/Homepage/Container'
-import Navbar from './components/Homepage/Navbar';
-import Personal from './components/Homepage/Personal';
-import Education from './components/Homepage/Education';
-import Projects from './components/Homepage/Projects';
 
 const App = () => {
     return (
-        <Container>
-            <Navbar />
-            <Personal />
-            <Education />
-            <Projects />
-        </Container>
+        <Router>
+            <Container>
+                <Navbar />
+                <Route exact path="/" component={Home} />
+                <Route path="/projects" component={ProjectsPage} />
+                <Route path="/about" component={AboutPage} />
+                <Footer />
+            </Container>
+        </Router>
     )
 };
 

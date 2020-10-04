@@ -26,7 +26,7 @@ const Projects = () => {
             <div className="landing-projects__wrapper">
                 {projects.slice(0, 3).map(project => {
                     return <ProjectCard key={project.id} title={project.name} description={project.description} link={project.homepage} />
-                })};
+                })}
             </div>
         </section>
     )

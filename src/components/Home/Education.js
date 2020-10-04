@@ -1,13 +1,13 @@
 import React from 'react';
-import reynoldsImg from '../../img/Reynolds.jpg';
-import lambdaImg from '../../img/LambdaSchool.png'
+import reynoldsImg from '../../img/reynolds.jpg';
+import lambdaImg from '../../img/lambdaschool.png'
 
 const Education = () => {
     return (
         <section className="education">
             <h2 className="education__heading">Education</h2>
             <div className="education__school">
-                <img src={reynoldsImg} className="school__img" />
+                <img src={reynoldsImg} className="school__img" alt="college-logo"/>
                 <div className="school__info">
                     <h3 className="school__info__name">Lambda School</h3>
                     <h3 className="school__info__degree">Full Stack Web Development and Computer Science Bootcamp</h3>
@@ -18,7 +18,7 @@ const Education = () => {
                 </div>
             </div>
             <div className="education__school">
-                <img src={lambdaImg} className="school__img" />
+                <img src={lambdaImg} className="school__img" alt="college-logo"/>
                 <div className="school__info">
                     <h3 className="school__info__name">J. Sargeant Reynolds Community College</h3>
                     <h3 className="school__info__degree">Associate of Science: Business Administration</h3>

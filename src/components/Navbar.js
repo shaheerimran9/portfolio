@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import MobileNav from './MobileNav';
 
 const Navbar = () => {
@@ -11,10 +12,12 @@ const Navbar = () => {
     return (
         <header>
             <nav className="main-nav">
-                <h2 className="main-nav__title">Shaheer Imran</h2>
+                <Link to="/">
+                    <h2 className="main-nav__title">Shaheer Imran</h2>
+                </Link>
                 <div className="main-nav__links">
-                    <a href="#">Projects</a>
-                    <a href="#">About Me</a>
+                    <Link to="/projects">Projects</Link>
+                    <Link to="about">About Me</Link>
                     <a href="#">
                         <i className="fab fa-linkedin"></i>
                     </a>
@@ -24,7 +27,7 @@ const Navbar = () => {
                 </div>
                 <i className="fas fa-bars nav-toggle" onClick={viewToggle}></i>
             </nav>
-            <MobileNav toggle={viewToggle} isMobileView={mobileView}/>
+            <MobileNav toggle={viewToggle} isMobileView={mobileView} />
         </header>
     );
 };

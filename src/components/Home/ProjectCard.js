@@ -1,5 +1,5 @@
 import React from 'react';
-import codeImg from '../../img/Code.jpg';
+import codeImg from '../../img/code.jpg';
 
 const ProjectCard = (props) => {
     return (
