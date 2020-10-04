@@ -4,20 +4,19 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
     const [projects, setProjects] = useState([]);
 
-    const getProjects = async () => {
-        await fetch('https://api.github.com/users/shaheerimran9/repos', {
-            method: "GET",
-            headers: {
-                Authorization: `Token ${process.env.REACT_APP_API_KEY}`
-            }
-        })
-            .then(res => res.json())
-            .then(data => {
-                setProjects(data);
-            })
-    };
-
     useEffect(() => {
+        const getProjects = async () => {
+            await fetch('https://api.github.com/users/shaheerimran9/repos', {
+                method: "GET",
+                headers: {
+                    Authorization: `Token ${process.env.REACT_APP_API_KEY}`
+                }
+            })
+                .then(res => res.json())
+                .then(data => {
+                    setProjects(data);
+                })
+        };
         getProjects();
     }, []);
 
