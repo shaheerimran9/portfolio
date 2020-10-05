@@ -17,12 +17,14 @@ const Navbar = () => {
                 </Link>
                 <div className="main-nav__links">
                     <Link to="/projects">Projects</Link>
-                    <Link to="about">About Me</Link>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/shaheerimran">
                         <i className="fab fa-linkedin"></i>
                     </a>
                     <a href="https://github.com/shaheerimran9">
                         <i className="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:shaheerimran@icloud.com">
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div>
                 <i className="fas fa-bars nav-toggle" onClick={viewToggle}></i>

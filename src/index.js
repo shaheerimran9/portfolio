@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home/Home';
 import ProjectsPage from './components/Projects/ProjectsPage';
-import AboutPage from './components/About/AboutPage';
 import './styles.css'
 
 const App = () => {
@@ -16,7 +15,6 @@ const App = () => {
                 <Navbar />
                 <Route exact path="/" component={Home} />
                 <Route path="/projects" component={ProjectsPage} />
-                <Route path="/about" component={AboutPage} />
                 <Footer />
             </Container>
         </Router>

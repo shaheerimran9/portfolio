@@ -13,12 +13,14 @@ const MobileNav = (props) => {
             <ul className="mobile-nav__links">
                 <Link to="/" onClick={clickHandler}>Home</Link>
                 <Link to="/projects" onClick={clickHandler}>Projects</Link>
-                <Link to="/about" onClick={clickHandler}>About Me</Link>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/shaheerimran">
                     <i className="fab fa-linkedin"></i>
                 </a>
                 <a href="https://github.com/shaheerimran9">
                     <i className="fab fa-github"></i>
+                </a>
+                <a href="mailto:shaheerimran@icloud.com">
+                    <i class="fas fa-envelope"></i>
                 </a>
             </ul>
         </nav>
