@@ -304,6 +304,75 @@ a:link, a:visited {
     text-decoration: none;
 }
 
+/* Projects Page */
+.allprojects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 3rem;
+}
+
+.allprojects__project {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: .3s ease;
+}
+
+.allprojects__project:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: .3s ease;
+}
+
+.project__img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.project__title {
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.project__description {
+    min-height: 15rem;
+    color: var(--secondary-color);
+    line-height: 3rem;
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.project__links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.project__links-btn {
+    display: inline-block;
+    color: #03A9F4;
+    border: 1px solid #03A9F4;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    transition: background-color .3s ease;
+}
+
+.project__links-btn:hover {
+    color: white;
+    background-color: #03A9F4;
+    border: 1px solid white;
+    transition: background-color .3s ease;
+}
+
 /* Footer */
 footer {
     padding: 1rem;
@@ -360,5 +429,13 @@ footer {
 
     .school__info__degree {
         line-height: 2.5rem;
+    }
+
+    .allprojects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project__img {
+        width: 100%;
     }
 }
