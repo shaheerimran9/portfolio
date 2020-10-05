@@ -13,7 +13,7 @@ const Education = () => {
                     <h3 className="school__info__degree">Full Stack Web Development and Computer Science Bootcamp</h3>
                     <p className="schoool__info__progress">Currently in-progress</p>
                     <p className="school__info__description">
-                        A remote tweleve month immersive, hands-on Full Stack Web Development and Computer Science program. Classes have a rigorous structure which helps ensure that students graduate with all the skills they need to make an impact on day one.
+                        A remote twelve month immersive, hands-on Full Stack Web Development and Computer Science program. Classes have a rigorous structure which helps ensure that students graduate with all the skills they need to make an impact on day one.
                     </p>
                 </div>
             </div>
