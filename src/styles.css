@@ -237,7 +237,7 @@ a:link, a:visited {
 
 .landing-projects__wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     justify-items: center;   
     grid-gap: 1rem;
 }
@@ -307,7 +307,7 @@ a:link, a:visited {
 /* Projects Page */
 .allprojects-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     padding: 0 3rem;
 }
 
@@ -433,6 +433,11 @@ footer {
 
     .allprojects-container {
         grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .allprojects__project {
+        padding: 2rem;
     }
 
     .project__img {
